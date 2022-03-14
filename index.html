@@ -1,0 +1,89 @@
+<!-- reversign the number -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reverse your name</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            body{
+                background: linear-gradient(90deg,rgb(128, 4, 4) 60% , rgb(209, 93, 15));
+                 color:white   
+             }
+ 
+             h2{
+                 font-size:1.2cm;
+             }
+ 
+            .head{
+                font-style: italic;
+                font-weight:300;
+                font-size:x-large;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h2>REVERSE YOUR NAME</h2>
+        <p class="head"> Enter your Name : &nbsp;<input type="text" id="nam" onkeyup="main()" placeholder="Your name" ></p>
+        <p class="head" id="resu"></p>
+            <HR width="50%">
+   </center> 
+</body>
+   <script>
+       alert("Enter your and you friend name in the box")
+       //reversing string algo
+       function main(){ 
+           var str=document.getElementById("nam").value;
+           var newstr="";
+            if(str=="Pankaj"){
+                document.getElementById("resu").innerHTML= ("chutiya");
+            }
+            else  if(str=="Satyam"){
+                document.getElementById("resu").innerHTML= ("FUCK YOU");
+            }
+            else  if(str=="Vishal"){
+                document.getElementById("resu").innerHTML= ("PADH LE BETA ");
+            }
+            else  if(str=="Ankit"){
+                document.getElementById("resu").innerHTML= ("PYAAR vyaar SAB DOKHA HA PADH LE BETA ABHI MOKA HA");
+            }
+            else  if(str=="Surbhi"){
+                document.getElementById("resu").innerHTML= ("Aur Shaboo kaisi ha ");
+            }
+            else  if(str=="Krishna"){
+                document.getElementById("resu").innerHTML= ("");
+            }
+            else  if(str=="Alok"){
+                document.getElementById("resu").innerHTML= ("Aur Jadoo kaisa ha ");
+            }
+            else  if(str=="Aryan"){
+                document.getElementById("resu").innerHTML= ("Ohh!! Student of the year ");
+            }
+            else  if(str=="Ritesh"){
+                document.getElementById("resu").innerHTML= ("aur shbookya hal ha");
+            }
+            else  if(str=="Komal"){
+                document.getElementById("resu").innerHTML= ("aur shbookya hal ha");
+            }
+            else  if(str==""){
+                document.getElementById("resu").innerHTML= ("aur shbookya hal ha");
+            }
+            else  if(str=="Surbhi"){
+                document.getElementById("resu").innerHTML= ("aur shbookya hal ha");
+            }
+            else  if(str=="Surbhi"){
+                document.getElementById("resu").innerHTML= ("aur shbookya hal ha");
+            }
+            else{
+                for(var i=str.length-1; i>=0;i--){
+                    newstr = newstr + str[i]; 
+                }
+                document.getElementById("resu").innerHTML= newstr;
+            }
+       }
+   </script>
+</html>
